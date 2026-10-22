@@ -1,0 +1,1091 @@
+Course Name: Ethical Hacking
+Faculty Name: Prof. Indranil Sen Gupta
+Department : Computer Science and Engineering
+
+Topic
+
+Lecture 1: IntroducDon to Ethical Hacking
+
+q What is ethical hacking?
+q Penetra1on tes1ng
+q Role of the ethical hacker
+
+What is Ethical Hacking?
+• It refers to the act of loca1ng weaknesses and vulnerabili1es of computer and
+informa1on systems by replica1ng the intent and ac1ons of malicious hackers.
+• It is also known as penetra'on tes'ng, intrusion tes'ng or red teaming.
+
+3
+
+IntroducDon to Ethical Hacking
+• Ethical Hackers
+• Employed by companies to perform penetra1on test.
+
+• PenetraDon Test
+• Legal aCempt to break into the company’s network to ﬁnd the weak links.
+• Tester only report ﬁndings, does not provide solu1ons.
+
+• Security Test
+• Also includes analyzing company’s security policy and procedures.
+• Tester oﬀers solu1ons to secure or protect the network.
+
+4
+
+Some Terminologies
+• Hacking - showing computer exper1se.
+• Cracking - breaching security on soMware or systems.
+• Spooﬁng - faking the origina1ng IP address in a datagram.
+• Denial of Service (DoS) - ﬂooding a host with suﬃcient network traﬃc so that
+it cannot respond anymore.
+• Port Scanning - searching for vulnerabili1es.
+
+5
+
+Gaining access
+• Front door
+• Password guessing
+• Password/key stealing
+
+• Back doors
+• OMen leM by original developers as debug
+and/or diagnos1c tools.
+
+• SoMware vulnerability exploitaDon
+• OMen adver1sed on the OEMs web site
+along with security patches.
+• Fer1le ground for script kiddies looking for
+something to do.
+
+• Trojan Horses
+• Usually hidden inside of soMware that we
+download and install from the net.
+• Many install backdoors.
+
+6
+
+Once inside, the hacker can...
+• Modify logs
+
+• To cover their tracks.
+
+• Steal ﬁles
+
+• Some1mes destroy aMer stealing.
+• An expert hacker would steal and cover their tracks to remain undetected.
+
+• Modify ﬁles
+
+• To let you know they were there.
+• To cause mischief.
+
+• Install back doors
+
+• So they can get in again.
+
+• ACack other systems
+
+7
+
+The Role of Security and PenetraDon Testers
+• Script kiddies or packet monkeys
+• Young or inexperienced hackers.
+• Copy codes and techniques from knowledgeable hackers.
+
+• Experienced penetra1on testers write programs or scripts using
+• Perl, C, C++, Python, JavaScript, Visual Basic, SQL, and many others.
+
+8
+
+PenetraDon-TesDng Methodologies
+• Tiger box
+• Collec1on of OSs and hacking tools.
+• Usually on a laptop.
+• Helps penetra1on testers and security testers conduct vulnerabili1es assessments and
+aCacks.
+
+• White box model
+• Tester is told everything about the network topology and technology.
+• Tester is authorized to interview IT personnel and company employees.
+• Makes tester’s job a liCle easier.
+
+9
+
+• Black box model
+• Tester is not given details about the network.
+• Burden is on the tester to ﬁnd the details.
+
+• Gray box model
+• Hybrid of the white and black box models.
+• Company gives tester par1al informa1on.
+
+10
+
+What You Can Do Legally
+• Laws involving technology change as rapidly as technology itself.
+• Find what is legal for you locally.
+• Laws change from place to place.
+
+• Be aware of what is allowed and what is not allowed.
+
+11
+
+Laws of the Land
+• Tools on your computer might be illegal to possess.
+• Contact local law enforcement agencies before installing hacking tools.
+• WriCen words are open to interpreta1on.
+• Governments are gehng more serious about punishment for cybercrimes.
+
+12
+
+What You Cannot Do Legally
+• Accessing a computer without permission is illegal.
+• Other illegal ac1ons:
+• Installing worms or viruses
+• Denial of Service aCacks
+• Denying users access to network resources
+
+• Be careful your ac1ons do not prevent customers from doing their jobs.
+
+13
+
+Ethical Hacking in a Nutshell
+• What it takes to be a security tester?
+• Knowledge of network and computer technology.
+• Ability to communicate with management and IT personnel.
+• Understanding of the laws.
+• Ability to use necessary tools.
+
+14
+
+In this course, we shall cover:
+• Relevant networking technologies
+• Basic cryptographic concepts
+• Case studies of secure applica1ons
+• Unconven1onal aCacks
+• Tools demonstra1on
+
+15
+
+16
+
+Course Name: Ethical Hacking
+Faculty Name: Prof. Indranil Sen Gupta
+Department : Computer Science and Engineering
+
+Topic
+
+Lecture 2: Basic Concepts of Networking (Part I)
+
+q Types of computer networks
+q Circuit switching and packet switching
+q Virtual circuits
+
+Networking: Basic Concepts
+• Computer Network
+• A communica;on system for connec;ng computers / hosts
+
+• Why?
+• Be@er connec;vity
+• Be@er communica;on
+• Be@er sharing of resources
+• Bring people together
+
+3
+
+Types of Computer Networks
+• Local Area Network (LAN)
+• Connects hosts within a rela;vely small geographical area
+v Same room
+v Same building
+v Same campus
+
+• Wide Area Network (WAN)
+• Hosts may be widely dispersed
+v Across campuses
+v Across ci;es / countries/ con;nents
+
+Faster
+Cheaper
+
+Slower
+Expensive
+
+4
+
+Data CommunicaLon over a Network
+• Broadly two approaches:
+a)
+
+Circuit switching
+
+b) Packet switching
+
+B
+
+D
+
+F
+
+C
+
+E
+
+G
+
+A
+H
+
+5
+
+Circuit Switching
+• A dedicated communica;on path is established between two sta;ons.
+• The path follows a ﬁxed sequence of intermediate links.
+• A logical channel gets deﬁned on each physical link.
+v Dedicated to the connec;on.
+
+B
+
+D
+
+F
+
+C
+
+E
+
+G
+
+A
+H
+
+6
+
+Circuit Switching (contd.)
+• Three steps are required for communica;on:
+a) ConnecLon establishment
+• Required before data transmission.
+
+b) Data transfer
+• Can proceed at maximum speed.
+
+c) ConnecLon terminaLon
+• Required aUer data transmission is over.
+• For dealloca;on of network resources.
+
+7
+
+Circuit Switching (contd.)
+• Drawbacks:
+• Channel capacity is dedicated during the en;re dura;on of communica;on.
+v Acceptable for voice communica;on.
+v Very ineﬃcient for bursty traﬃc like data.
+
+• There is an ini;al delay.
+v For connec;on establishment.
+
+8
+
+Packet Switching
+• Modern form of long-distance data communica;on.
+• Network resources are not dedicated.
+• A link can be shared.
+
+• The basic technology has evolved over ;me.
+• Basic concept has remained the same.
+
+9
+
+Packet Switching (contd.)
+• Data are transmi@ed in short packets (~ Kbytes).
+• A longer message is broken up into smaller chunks.
+• The chunks are called packets.
+
+Message
+
+• Every packet contains a header.
+v Relevant informa;on for rou;ng, etc.
+
+H
+
+H
+
+H
+
+PACKETS
+
+10
+
+Packet Switching (contd.)
+• Packet switching is based on store-and-forward concept.
+• Each intermediate network node receives a whole packet.
+• Decides the route.
+• Forwards the packet along the selected route.
+
+• Each intermediate node (router) maintains a rou.ng table.
+
+11
+
+Packet Switching (contd.)
+• Advantages:
+• Links can be shared; so link u;liza;on is be@er.
+• Suitable for computer-generated (bursty) traﬃc.
+• Buﬀering and data rate conversion can be performed easily.
+• Some packets may be given priority over others, if desired.
+
+12
+
+Packet Switching (contd.)
+• How are packets transmi@ed?
+• Two alterna;ve approaches:
+a) Virtual Circuits
+b) Datagram
+
+• The abstract network model:
+B
+
+D
+
+F
+
+C
+
+E
+
+G
+
+A
+H
+
+13
+
+(a) Virtual Circuit Approach
+• Similar in concept to circuit switching.
+• A route is established before packet transmission starts.
+• All packets follow the same path.
+• The links comprising the path are not dedicated.
+v Diﬀerent from circuit switching in this respect.
+
+• Analogy:
+• Telephone system.
+
+14
+
+(a) Virtual Circuit Approach (contd.)
+• How it works?
+• Route is established a priori.
+• Packet forwarded from one node to the next using store-and-forward scheme.
+• Only the virtual circuit number need to be carried by a packet.
+v Each intermediate node maintains a table.
+v Created during route establishment.
+v Used for packet forwarding.
+
+• No dynamic rou;ng decision is taken by the intermediate nodes.
+
+15
+
+16
+
+Course Name: Ethical Hacking
+Faculty Name: Prof. Indranil Sen Gupta
+Department : Computer Science and Engineering
+
+Topic
+
+Lecture 3: Basic Concepts of Networking (Part II)
+
+q Datagrams
+q Layered network architecture
+
+(b) Datagram Approach
+• Basic concept:
+• No route is established beforehand.
+• Each packet is transmi>ed as an independent en?ty.
+• Does not maintain any history.
+
+• Analogy:
+• Postal system.
+
+3
+
+Datagram Approach (contd.)
+• Every intermediate node has to take rou?ng decisions dynamically.
+• Makes use of a rou$ng table.
+• Every packet must contain source and des$na$on addresses.
+
+• Problems:
+• Packets may be delivered out of order.
+• If a node crashes momentarily, all of its queued packets are lost.
+• Duplicate packets may also be generated.
+
+4
+
+Datagram Approach (contd.)
+• Advantages:
+• Faster than virtual circuit for smaller number of packets.
+v No route establishment and termina?on.
+
+• More ﬂexible.
+• Packets between two hosts may follow diﬀerent paths.
+v Can handle conges?on/failed link.
+
+B
+
+D
+
+F
+
+C
+
+E
+
+G
+
+A
+H
+
+5
+
+ComparaJve Study
+• Three types of delays must be considered:
+a)
+
+Propaga?on Delay
+• Time taken by a data signal to propagate from one node to the next.
+
+b) Transmission Time
+• Time taken to send out a packet by the transmi>er.
+
+c)
+
+Processing Delay
+• Time taken by a node to process a packet.
+
+6
+
+Circuit Switching
+• AUer ini?al circuit establishment, data bits sent con?nuously without any delay.
+
+7
+
+Virtual Circuit Packet Switching
+• The Call Request packet sent from source to des?na?on.
+• The Call Accept packet returns back.
+• Packets sent sequen?ally in a pipelined fashion.
+• Store-and-forward approach.
+
+8
+
+Datagram Packet Switching
+• No ini?al delay.
+• The packets are sent out independently.
+• May follow diﬀerent paths.
+• Also follows store-and-forward approach.
+
+9
+
+Layered Network Architecture
+• Open systems interconnec?on (OSI) reference model.
+• Seven layer model.
+• Communica?on func?ons are par??oned into a hierarchical set of layers.
+
+• Objec?ve:
+• Systema?c approach to design.
+• Changes in one layer should not require changes in other layers.
+
+10
+
+The 7-layer OSI Model
+ApplicaJon
+PresentaJon
+Session
+
+Host-to-host
+
+Transport
+Network
+Datalink
+
+Point-to-point
+
+Physical
+
+11
+
+Layer FuncJons
+• Physical
+• Transmit raw bit stream over a physical medium.
+
+• Data Link
+• Reliable transfer of frames over a point-to-point link (ﬂow control, error
+control).
+
+• Network
+
+ApplicaJon
+PresentaJon
+Session
+Transport
+Network
+Datalink
+Physical
+
+• Establishing, maintaining and termina?ng connec?ons.
+• Routes packets through point-to-point links.
+
+12
+
+Layer FuncJons (contd.)
+• Transport
+• End-to-end reliable data transfer, with error recovery and ﬂow
+control.
+
+• Session
+• Manages sessions.
+
+• PresentaJon
+
+ApplicaJon
+PresentaJon
+Session
+Transport
+Network
+Datalink
+Physical
+
+• Provides data independence.
+
+• ApplicaJon
+• Interface point for user applica?ons.
+
+13
+
+How Data Flows
+APPLICATION
+
+APPLICATION
+
+PRESENTATION
+
+PRESENTATION
+
+SESSION
+
+SESSION
+
+TRANSPORT
+
+TRANSPORT
+
+NETWORK
+
+N
+
+N
+
+NETWORK
+
+DATA LINK
+
+DL
+
+DL
+
+DATA LINK
+
+PHYSICAL
+
+P
+
+P
+
+PHYSICAL
+
+A
+
+B
+
+D
+
+S
+
+14
+
+Internetworking Devices
+• Hub
+• Extends the span of a single LAN.
+
+• Bridge / Layer-2 Switch
+• Connects two or more LANs together.
+• Works at data link layer level.
+
+• Router / Layer-3 Switch
+• Connects any combina?on of LANs and WANs.
+• Works at network layer level.
+
+15
+
+Typical Internetworking Structure
+
+16
+
+17
+
+Course Name: Ethical Hacking
+Faculty Name: Prof. Indranil Sen Gupta
+Department : Computer Science and Engineering
+
+Topic
+
+Lecture 4: TCP/IP Protocol Stack (Part I)
+
+q TCP/IP protocol stack
+q Basic func5ons of TCP, UDP and IP
+q Data encapsula5on
+
+IntroducGon
+• TCP/IP is the most fundamental protocol used in the Internet.
+• Allows computers to communicate / share resources.
+• Used as a standard.
+• To bridge the gap between non-compa5ble plaCorms.
+
+• Work on TCP/IP started in the 1970s.
+• Funded by US Military.
+• Advanced Research Project Agency (ARPA).
+
+3
+
+Network Layering in TCP/IP
+• In 1978, Interna5onal Standards Organiza5on (ISO) proposed the 7-layer OSI
+reference model for network services and protocols.
+• TCP/IP does not strictly follow the OSI model.
+• It follows a simpliﬁed 4-layer model.
+
+4
+
+The 7-layer OSI Model
+ApplicaGon
+
+The 4-layer TCP/IP Model
+ApplicaGon
+
+Runs on top of layers 1,2,3
+
+Transport
+
+End-to-end message
+transfer
+
+Network
+
+Packet delivery across Internet
+
+Datalink
+
+Frame transmission over link
+
+PresentaGon
+Session
+
+Host-to-host
+
+Transport
+Network
+Datalink
+
+Point-to-point
+
+Physical
+
+5
+
+Data Flow in 4-layer Model
+ApplicaGon
+
+ApplicaGon
+
+Transport
+
+Transport
+
+Network
+
+Network
+
+Network
+
+Datalink
+
+Datalink
+
+Datalink
+
+B
+
+C
+
+A
+
+6
+
+TCP/IP Protocol Suite
+• Refers to a family of protocols.
+• The protocols are built on top of connec5onless technology (datagrams).
+• Data sent from one node to another as a sequence of datagrams.
+• Each datagram is sent independently.
+• The datagrams corresponding to the same message may follow diﬀerent routes.
+v Variable delay, arrival order at des5na5on.
+
+7
+
+TCP/IP Family Members (ParGal List)
+FTP
+
+TFTP
+
+SMTP
+
+SNMP
+
+Transmission Control Protocol (TCP)
+Internet Protocol (IP)
+
+ICMP
+
+DNS
+
+User
+Process
+
+User Datagram Protocol (UDP)
+IGMP
+
+ARP
+
+RARP
+
+Datalink and Hardware Layer (e.g., Ethernet)
+
+8
+
+• Address ResoluGon Protocol (ARP)
+• Map IP addresses to hardware (MAC) addresses.
+
+• Reverse Address ResoluGon Protocol (RARP)
+• Map hardware addresses to IP addresses.
+
+• Internet Control Message Protocol (ICMP)
+• A network device can send error messages and other informa5on.
+
+• Internet Group Management Protocol (IGMP)
+• A node can send its mul5cast group membership to adjacent routers.
+
+9
+
+Typical Scenario
+User Process
+
+User Process
+
+TCP
+
+UDP
+
+IP
+
+Datalink and Hardware Layer (e.g., Ethernet)
+
+10
+
+What does IP do?
+• IP transports datagrams (packets) from a source node to a des5na5on node.
+• Responsible for rou5ng the packets.
+• Breaks a packet into smaller packets, if required.
+• Unreliable service.
+v A packet may be lost in transit.
+v Packets may arrive out of order.
+v Duplicate packets may be generated.
+
+11
+
+What does TCP do?
+• TCP provides a connec5on-oriented, reliable service for sending messages.
+• Split a message into packets.
+• Reassemble packets at des5na5on.
+• Resend packets that were lost in transit.
+
+• Interface with IP:
+• Each packet forwarded to IP for delivery.
+• Error control is done by TCP.
+
+12
+
+What does UDP do?
+• UDP provides a connec5onless, unreliable service for sending datagrams (packets).
+• Messages small enough to ﬁt in a packet (e.g., DNS query).
+• Simpler (and faster) than TCP.
+• Never split data into mul5ple packets.
+• Does not care about error control.
+
+• Interface with IP:
+• Each UDP packet sent to IP for delivery.
+
+13
+
+Addresses in TCP/IP
+User Process
+
+User Process
+
+TCP
+
+UDP
+
+Port Address
+(16 bits)
+
+IP
+
+IP Address
+(32 bits)
+
+Datalink and Hardware Layer (e.g., Ethernet)
+
+Physical Address
+(48 bits)
+
+14
+
+EncapsulaGon
+• Basic concept:
+• As data ﬂows down the protocol hierarchy, headers (and trailers) get appended to it.
+• As data moves up the hierarchy, headers (and trailers) get stripped oﬀ.
+
+• An example to illustrate:
+• Trivial ﬁle transfer protocol (TFTP).
+• TFTP client transfers 200 bytes of data.
+• 4 bytes of TFTP header gets added.
+
+TFTP client
+
+TFTP server
+
+UDP
+
+UDP
+
+IP
+
+IP
+
+Ethernet
+
+Ethernet
+
+15
+
+EncapsulaGon in TFTP
+Data
+H-TFTP
+
+Data
+
+TFTP message
+
+H-UDP
+
+H-TFTP
+
+Data
+
+UDP packet
+
+H-IP
+
+H-UDP
+
+H-TFTP
+
+Data
+
+IP packet
+
+H-Eth
+
+H-IP
+
+H-UDP
+
+H-TFTP
+
+Data
+
+T-Eth
+
+14
+
+20
+
+8
+
+4
+
+200
+
+4
+
+Ethernet frame
+
+16
+
+17
+
+Course Name: Ethical Hacking
+Faculty Name: Prof. Indranil Sen Gupta
+Department : Computer Science and Engineering
+
+Topic
+
+Lecture 5: TCP/IP Protocol Stack (Part II)
+
+q IP Datagrams
+q IP Header ﬁelds
+
+IP Datagrams
+
+The IP Layer
+• IP layer provides a connec7onless, unreliable delivery system for packets.
+• Each packet is independent of one another.
+• IP layer need not maintain any history.
+• Each IP packet must contain the source and des7na7on addresses.
+• IP layer does not guarantee delivery of packets.
+
+• IP layer encapsula7on
+• Receives a data chunk from the higher layer (TCP or UDP).
+• Prepends a header of minimum 20 bytes.
+v Containing relevant informa7on for handling rou7ng and ﬂow control.
+
+4
+
+IllustraGon
+Data
+
+20 bytes IP header
+
+Data
+
+5
+
+0
+
+4
+HLEN
+
+15 16
+Service type
+
+Total Length
+
+IdenGﬁcaGon
+Time to Live
+
+31
+
+Flags
+Protocol
+
+Fragment Oﬀset
+Header Checksum
+
+Source IP Address
+DesGnaGon IP Address
+
+--------- HEADER --------
+
+VER
+
+8
+
+Format of IP Datagram
+
+OpGons
+
+DATA
+
+6
+
+IP Header Fields
+• VER (4 bits)
+• Version of the IP protocol in use (typically 4).
+
+• HLEN (4 bits)
+• Length of the header, expressed as the number of 32-bit words.
+• Minimum size is 5, and maximum 15.
+
+• Total Length (16 bits)
+• Length in bytes of the datagram, including headers.
+• Maximum datagram size :: 216 = 65536 bytes.
+
+7
+
+IP Header Fields (contd.)
+• Service Type (8 bits)
+• Allows packet to be assigned a priority.
+• Router can use this ﬁeld to route packets.
+
+• Time to Live (8 bits)
+• Prevents a packet from traveling in a loop.
+• Senders sets a value, that is decremented at each hop. If it reaches zero, packet is
+discarded.
+
+• Protocol (8 bits)
+• Iden7ﬁes the higher layer protocol being used.
+
+8
+
+IP Header Fields (contd.)
+• Source IP address (32 bits)
+• Internet address of the sender.
+
+• DesGnaGon IP address (32 bits)
+• Internet address of the des7na7on.
+
+• IdenGﬁcaGon, Flags, Fragment Oﬀset
+• Used for handling fragmenta7on.
+
+• OpGons (variable width)
+• Can be given provided router supports.
+• Source rou7ng, for example.
+
+9
+
+IP Header Fields (contd.)
+• Header Checksum (16 bits)
+• Covers only the IP header.
+• How computed?
+v Header treated as a sequence of 16-bit integers.
+v The integers are all added using ones complement arithme7c.
+v Ones complement of the ﬁnal sum is taken as the checksum.
+
+• A mismatch in checksum causes the datagram to be discarded.
+
+10
+
+Viewing IP Packets
+• We can use packet sniﬀers to view IP packets.
+• Some popular packet sniﬀers:
+• Wireshark
+• Windump
+• tcpdump
+• Tshark
+• SolarWinds
+• …. and many more
+
+11
+
+Wireshark …
+
+12
+
+13
+
+
